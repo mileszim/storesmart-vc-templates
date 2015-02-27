@@ -32,12 +32,54 @@ function map_sh_product_brochure() {
       "dependency"  => array()
     ),
     array(
-      "type"        => "textarea_html",
-      "param_name"  => "content",
+      "type"        => "textfield",
+      "param_name"  => "posts",
       "holder"      => "div",
       "value"       => "",
-      "heading"     => "Content",
-      "description" => "Grid content",
+      "heading"     => "Comma separated product ids",
+      "description" => "",
+      "dependency"  => array(
+        array(
+          "element" => 'filter_by',
+          "value"   => 'product_id'
+        )
+      )
+    ),
+    array(
+      "type"        => "textfield",
+      "param_name"  => "taxonomy",
+      "holder"      => "div",
+      "value"       => "",
+      "heading"     => "Taxonomy id",
+      "description" => "",
+      "dependency"  => array(
+        array(
+          "element" => 'filter_by',
+          "value"   => 'taxonomy'
+        )
+      )
+    ),
+    array(
+      "type"        => "textfield",
+      "param_name"  => "terms",
+      "holder"      => "div",
+      "value"       => "",
+      "heading"     => "Comma separated product terms",
+      "description" => "Terms of \"taxonomy\" attribute value taxonomy.",
+      "dependency"  => array(
+        array(
+          "element" => 'filter_by',
+          "value"   => 'taxonomy'
+        )
+      )
+    ),
+    array(
+      "type"        => "textfield",
+      "param_name"  => "number_products",
+      "holder"      => "div",
+      "value"       => "",
+      "heading"     => "Number of products.",
+      "description" => "A number. \"-1\" - all slides.",
       "dependency"  => array()
     )
   );
