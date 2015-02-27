@@ -9,5 +9,5 @@ To install:
 
 ### More info:
 
-* (StoreSmart)[http://themeforest.net/item/storesmart-multipurpose-ecommerce-theme/9461406]
-* (Visual Composer)[http://vc.wpbakery.com/]
+* [StoreSmart](http://themeforest.net/item/storesmart-multipurpose-ecommerce-theme/9461406)
+* [Visual Composer](http://vc.wpbakery.com/)
