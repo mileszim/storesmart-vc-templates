@@ -37,7 +37,7 @@ function map_sh_product_brochure() {
       "holder"      => "div",
       "value"       => "",
       "heading"     => "Comma separated product ids",
-      "description" => "",
+      "description" => "Works only if filter_by=\"product_id\"",
       "dependency"  => array(
         array(
           "element" => 'filter_by',
@@ -51,7 +51,7 @@ function map_sh_product_brochure() {
       "holder"      => "div",
       "value"       => "",
       "heading"     => "Taxonomy id",
-      "description" => "",
+      "description" => ". Works only if filter_by=\"taxonomy\"",
       "dependency"  => array(
         array(
           "element" => 'filter_by',
@@ -65,7 +65,7 @@ function map_sh_product_brochure() {
       "holder"      => "div",
       "value"       => "",
       "heading"     => "Comma separated product terms",
-      "description" => "Terms of \"taxonomy\" attribute value taxonomy.",
+      "description" => "Terms of \"taxonomy\" attribute value taxonomy. Works only if filter_by=\"taxonomy\"",
       "dependency"  => array(
         array(
           "element" => 'filter_by',
@@ -77,9 +77,81 @@ function map_sh_product_brochure() {
       "type"        => "textfield",
       "param_name"  => "number_products",
       "holder"      => "div",
-      "value"       => "",
+      "value"       => "-1",
       "heading"     => "Number of products.",
       "description" => "A number. \"-1\" - all slides.",
+      "dependency"  => array()
+    ),
+    array(
+      "type"        => "dropdown",
+      "param_name"  => "order_by",
+      "holder"      => "div",
+      "value"       => array('date','ID','author','title','type','rand'),
+      "heading"     => "Order by",
+      "description" => "",
+      "dependency"  => array()
+    ),
+    array(
+      "type"        => "dropdown",
+      "param_name"  => "order",
+      "holder"      => "div",
+      "value"       => array('ASC', 'DESC'),
+      "heading"     => "Order direction",
+      "description" => "ASC - ascending. DESC - descending.",
+      "dependency"  => array()
+    ),
+    array(
+      "type"        => "dropdown",
+      "param_name"  => "entry_show_animation",
+      "holder"      => "div",
+      "value"       => array('yes', 'no'),
+      "heading"     => "Entry animation on show.",
+      "description" => "",
+      "dependency"  => array()
+    ),
+    array(
+      "type"        => "dropdown",
+      "param_name"  => "image_show_animation",
+      "holder"      => "div",
+      "value"       => array('no', 'yes'),
+      "heading"     => "Image animation on show.",
+      "description" => "",
+      "dependency"  => array()
+    ),
+    array(
+      "type"        => "textfield",
+      "param_name"  => "alpha_column_show_animation",
+      "holder"      => "div",
+      "value"       => "none",
+      "heading"     => "Alpha Column: Show Animation",
+      "description" => "",
+      "dependency"  => array()
+    ),
+    array(
+      "type"        => "textfield",
+      "param_name"  => "alpha_column_show_animation_duration",
+      "holder"      => "div",
+      "value"       => "2s",
+      "heading"     => "Alpha Column: Show Animation Duration",
+      "description" => "",
+      "dependency"  => array()
+    ),
+    array(
+      "type"        => "textfield",
+      "param_name"  => "omega_column_show_animation",
+      "holder"      => "div",
+      "value"       => "none",
+      "heading"     => "Omega Column: Show Animation",
+      "description" => "",
+      "dependency"  => array()
+    ),
+    array(
+      "type"        => "textfield",
+      "param_name"  => "omega_column_show_animation_duration",
+      "holder"      => "div",
+      "value"       => "2s",
+      "heading"     => "Omega Column: Show Animation Duration",
+      "description" => "",
       "dependency"  => array()
     )
   );
