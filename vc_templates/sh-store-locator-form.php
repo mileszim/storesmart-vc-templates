@@ -2,8 +2,8 @@
 // Store Locator Form
 // https://strangehouse.zendesk.com/hc/en-us/articles/202051802-Store-Locator-Form
 
-add_action( 'vc_before_init', 'map_sh_section' );
-function map_sh_section() {
+add_action( 'vc_before_init', 'map_sh_store_locator_form' );
+function map_sh_store_locator_form() {
 
   // StoreSmart Category
   $category = 'StoreSmart';
