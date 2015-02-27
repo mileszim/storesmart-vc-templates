@@ -55,7 +55,7 @@ require_once('vc_templates/sh-store-locator-form.php');
 require_once('vc_templates/sh-block.php');
 // require_once('vc_templates/sh-heading.php');
 // require_once('vc_templates/sh-paragraph.php');
-// require_once('vc_templates/sh-division.php');
+require_once('vc_templates/sh-division.php');
 // require_once('vc_templates/sh-image.php');
 // require_once('vc_templates/sh-video.php');
 // require_once('vc_templates/sh-video-background.php');
